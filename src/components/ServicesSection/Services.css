@@ -1,0 +1,39 @@
+/* styles.css (or styled-components) */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .service-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card h2 {
+    font-size: 2rem;
+    color: #6a0dad; /* Purple */
+  }
+  
+  .service-card p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .service-pricing {
+    margin-bottom: 1rem;
+  }
+  
+  .service-pricing p {
+    font-size: 1.1rem;
+  }
+  
+  .service-card p:last-child {
+    margin-bottom: 0;
+  }
+  

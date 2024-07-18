@@ -1,0 +1,46 @@
+/* styles.css (or styled-components) */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #292929; /* Black background */
+    color: white;
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust as needed */
+  }
+  
+  .nav-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links ul li {
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide navigation links by default on mobile */
+    }
+  
+    .nav-links.active {
+      display: flex; /* Display when hamburger menu is clicked */
+      flex-direction: column;
+      position: absolute;
+      top: 4rem; /* Adjust as needed */
+      left: 0;
+      background-color: #292929; /* Black background */
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    .nav-links.active ul li {
+      margin-bottom: 1rem;
+    }
+  }
+  

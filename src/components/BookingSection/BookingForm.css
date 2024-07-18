@@ -1,0 +1,68 @@
+/* styles.css (or styled-components) */
+
+.booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f5f5f5; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-form h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #6a0dad; /* Purple */
+    text-align: center;
+  }
+  
+  .booking-form p.error-message {
+    color: #ff0000; /* Red color for error messages */
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .booking-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .booking-form label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .booking-form input[type="date"],
+  .booking-form input[type="time"],
+  .booking-form button {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .booking-form input[type="date"],
+  .booking-form input[type="time"] {
+    outline: none;
+  }
+  
+  .booking-form button {
+    background-color: #6a0dad; /* Purple */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+  
+  .booking-form button:hover {
+    background-color: #4b0867; /* Darker shade of purple */
+  }
+  
+  @media (max-width: 768px) {
+    .booking-form {
+      padding: 1.5rem;
+    }
+  }
+  
